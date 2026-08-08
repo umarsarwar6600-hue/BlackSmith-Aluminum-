@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg: #0F0F10;
+    --card-bg: #1A1A1C;
+    --accent: #C9A24B;
+    --text-main: #F5F5F0;
+    --text-muted: #8A8D91;
+    --line: rgba(201, 162, 75, 0.3);
+
+    --font-arabic: 'Tajawal', 'Cairo', sans-serif;
+    --font-english: 'Plus Jakarta Sans', 'Georgia', serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg);
+    color: var(--text-main);
+  }
+
+  body {
+    font-family: var(--font-arabic);
+    background-color: var(--bg);
+    color: var(--text-main);
+  }
+
+  html[lang="en"] body {
+    font-family: var(--font-english);
+  }
+}
+
+/* Custom Sophisticated Dark Styles */
+.bg-sophisticated-dark {
+  background-color: #0F0F10;
+}
+
+.bg-sophisticated-card {
+  background-color: #1A1A1C;
+}
+
+.border-sophisticated-line {
+  border-color: rgba(201, 162, 75, 0.3);
+}
+
+.text-accent-gold {
+  color: #C9A24B;
+}
+
+.text-muted-gray {
+  color: #8A8D91;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #DFB75A 0%, #C9A24B 50%, #A37F2C 100%);
+}
+
+.bg-gold-gradient-hover:hover {
+  background: linear-gradient(135deg, #EAD07C 0%, #DFB75A 50%, #B89238 100%);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F5F5F0 0%, #E2C275 40%, #C9A24B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gold-glow {
+  box-shadow: 0 0 15px rgba(201, 162, 75, 0.15);
+}
+
+.metal-card-bg {
+  background: #1A1A1C;
+  border: 1px solid rgba(201, 162, 75, 0.3);
+}
+
+.metal-card-bg:hover {
+  border-color: rgba(201, 162, 75, 0.6);
+  box-shadow: 0 10px 30px -10px rgba(201, 162, 75, 0.25);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0F0F10;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2A2D;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A24B;
+}
+
+
